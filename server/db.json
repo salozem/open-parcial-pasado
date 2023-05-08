@@ -1,0 +1,24 @@
+{
+  "foodTrucks": [
+    {
+      "id": 1,
+      "ownerFirstName": "John",
+      "ownerLastName": "Doe",
+      "brandName": "Bembos",
+      "email": "johndoe@bembos.com",
+      "address": "1st Street",
+      "webSiteUrl": "bembos.com.pe",
+      "menuUrl": "bembos.com.pe/carta"
+    },
+    {
+      "id": 2,
+      "ownerFirstName": "Jason",
+      "ownerLastName": "Doe",
+      "brandName": "McDonalds",
+      "email": "jasondoe@mcdonalds.com",
+      "address": "2nd Street",
+      "webSiteUrl": "mcdonalds.com.pe",
+      "menuUrl": "mcdonalds.com.pe/carta"
+    }
+  ]
+}
