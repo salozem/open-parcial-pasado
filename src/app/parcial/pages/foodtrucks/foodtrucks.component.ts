@@ -5,6 +5,7 @@ import {NgForm} from "@angular/forms";
 import {MatPaginator} from "@angular/material/paginator";
 import {MatSort} from "@angular/material/sort";
 import {FoodtrucksService} from "../../services/foodtrucks.service";
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-foodtrucks',
@@ -27,7 +28,7 @@ export class FoodtrucksComponent implements OnInit {
 
   isEditMode = false;
 
-  constructor(private foodtrucksService: FoodtrucksService) {
+  constructor(private foodtrucksService: FoodtrucksService, private router:Router) {
     this.foodtruckData = {} as Foodtruck;
     this.dataSource = new MatTableDataSource<any>();
   }
@@ -55,6 +56,7 @@ export class FoodtrucksComponent implements OnInit {
   cancelEdit() {
     this.isEditMode = false;
     this.foodtruckForm.resetForm();
+    this.router.navigate(['/home']);
   }
 
   deleteItem(id: number) {
@@ -95,6 +97,7 @@ export class FoodtrucksComponent implements OnInit {
       } else {
         console.log('about to add')
         this.addFoodtruck();
+        this.router.navigate(['/home']);
       }
       this.cancelEdit();
     } else {

@@ -1,12 +1,26 @@
-.table-wrapper {
-  width: 1024px;
-  margin: 50px auto;
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-table{
-  width: 100%;
+mat-form-field {
+  width: 80%;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
-tr.editable-row{
-  background-color: lightblue;
+button {
+  margin: 10px;
+}
+
+.cancel-button {
+  background-color: gray;
+  color: white;
+}
+
+.save-button {
+  background-color: green;
+  color: white;
 }

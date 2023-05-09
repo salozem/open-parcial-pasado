@@ -19,6 +19,23 @@
       "address": "2nd Street",
       "webSiteUrl": "mcdonalds.com.pe",
       "menuUrl": "mcdonalds.com.pe/carta"
+    },
+    {
+      "ownerFirstName": "Salomón",
+      "ownerLastName": "Zegarra",
+      "brandName": "Prueba Food Truck",
+      "email": "u201917922@upc.edu.pe",
+      "address": "3rd Street",
+      "id": 3
+    },
+    {
+      "ownerFirstName": "Renato",
+      "ownerLastName": "Barandiaran",
+      "brandName": "DNO",
+      "email": "dno@email.com",
+      "address": "Villaran",
+      "websiteUrl": "dno.com",
+      "id": 4
     }
   ]
 }

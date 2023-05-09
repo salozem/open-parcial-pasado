@@ -18,11 +18,15 @@ import {MatCardModule} from "@angular/material/card";
 import {MatGridListModule} from "@angular/material/grid-list";
 import {MatDividerModule} from "@angular/material/divider";
 import { FoodtrucksComponent } from './parcial/pages/foodtrucks/foodtrucks.component';
+import { HomeComponent } from './parcial/pages/home/home.component';
+import { NotFoundComponent } from './parcial/pages/not-found/not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FoodtrucksComponent
+    FoodtrucksComponent,
+    HomeComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
