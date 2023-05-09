@@ -1,0 +1,25 @@
+<div class="table-wrapper">
+  <h1>Food Truck Lovers</h1>
+  <h2>{{isEditMode ? 'Edit food truck':'Add new Food truck'}}</h2>
+  <form (submit)="onSubmit()" #foodtruckForm="ngForm">
+    <mat-form-field>
+      <input matInput placeholder="First Name" name="ownerFirstName" required [(ngModel)]="foodtruckData.ownerFirstName">
+      <input matInput placeholder="Last Name" name="ownerLastName" required [(ngModel)]="foodtruckData.ownerLastName">
+      <input matInput placeholder="Your Food Truck or Brand Name" name="brandName" required [(ngModel)]="foodtruckData.brandName">
+      <input matInput placeholder="Email" name="email" required [(ngModel)]="foodtruckData.email">
+      <input matInput placeholder="Address" name="address" [(ngModel)]="foodtruckData.address">
+      <input matInput placeholder="Website URL" name="websiteUrl" [(ngModel)]="foodtruckData.websiteUrl">
+      <input matInput placeholder="Menu URL" name="menuURL" [(ngModel)]="foodtruckData.menuUrl">
+    </mat-form-field>
+    <ng-container *ngIf="isEditMode, else elseTemplate">
+      <button mat-button color="primary">Update</button>
+      <button mat-button color="warn" (click)="cancelEdit()">Cancel</button>
+    </ng-container>
+    <ng-template #elseTemplate>
+      <button mat-button color="primary">Add</button>
+    </ng-template>
+  </form>
+  <table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z0">
+
+  </table>
+</div>
