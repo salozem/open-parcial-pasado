@@ -17,10 +17,12 @@ import {MatIconModule} from "@angular/material/icon";
 import {MatCardModule} from "@angular/material/card";
 import {MatGridListModule} from "@angular/material/grid-list";
 import {MatDividerModule} from "@angular/material/divider";
+import { FoodtrucksComponent } from './parcial/pages/foodtrucks/foodtrucks.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FoodtrucksComponent
   ],
   imports: [
     BrowserModule,
